@@ -68,7 +68,7 @@ See the help file `help splinefit` for details.
 Get the example data from GitHub:
 
 ```
-set obs 8
+set obs 6
 
 gen id = _n
 gen x = .
@@ -106,13 +106,13 @@ splinefit y x, close smooth(0)
 splinefit y x, close smooth(0.2)
 ```
 
-<img src="/figures/spline3.png" height="600">
+<img src="/figures/spline4.png" height="600">
 
 ```
 splinefit y x, close smooth(1)
 ```
 
-<img src="/figures/spline3.png" height="600">
+<img src="/figures/spline5.png" height="600">
 
 ### Additional options
 
@@ -120,7 +120,7 @@ splinefit y x, close smooth(1)
 splinefit y x, smooth(0.5) lc(black) mc(red) ms(1.2) legend(off) mlab(id) close
 ```
 
-<img src="/figures/spline3.png" height="600">
+<img src="/figures/spline6.png" height="600">
 
 
 ## Feedback
