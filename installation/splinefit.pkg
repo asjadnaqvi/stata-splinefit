@@ -1,0 +1,25 @@
+v 1.0
+d {bf:splinefit}: A Stata package for smooth line graphs.
+d See {bf:help splinefit} after installation.
+d
+d Requires: Stata version 15 or higher.
+d
+d KW: Stata
+d KW: graphs
+d
+d
+d Distribution-Date: 20230801
+d
+d This  version: 01 Aug 2023
+d First version: 01 Aug 2023
+d License: MIT
+d
+d Author: Asjad Naqvi (asjadnaqvi@gmail.com)
+d
+f splinefit.ado
+f splinefit.sthlp
+
+
+
+
+
