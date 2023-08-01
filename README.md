@@ -1,6 +1,6 @@
 
 
-![StataMin](https://img.shields.io/badge/stata-2015-blue) ![issues](https://img.shields.io/github/issues/asjadnaqvi/stata-arcplot) ![license](https://img.shields.io/github/license/asjadnaqvi/stata-arcplot) ![Stars](https://img.shields.io/github/stars/asjadnaqvi/stata-arcplot) ![version](https://img.shields.io/github/v/release/asjadnaqvi/stata-arcplot) ![release](https://img.shields.io/github/release-date/asjadnaqvi/stata-arcplot)
+![StataMin](https://img.shields.io/badge/stata-2015-blue) ![issues](https://img.shields.io/github/issues/asjadnaqvi/stata-splinefit) ![license](https://img.shields.io/github/license/asjadnaqvi/stata-splinefit) ![Stars](https://img.shields.io/github/stars/asjadnaqvi/stata-splinefit) ![version](https://img.shields.io/github/v/release/asjadnaqvi/stata-splinefit) ![release](https://img.shields.io/github/release-date/asjadnaqvi/stata-splinefit)
 
 ---
 
