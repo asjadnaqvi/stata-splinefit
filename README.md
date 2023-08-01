@@ -68,7 +68,7 @@ See the help file `help splinefit` for details.
 Get the example data from GitHub:
 
 ```
-set obs 6
+set obs 9
 
 gen id = _n
 gen x = .
