@@ -1,11 +1,11 @@
-v 1.22
-d 'SPIDER': A Stata package for spider plots
+v 1.0 beta
+d 'SPLINEFIT': A Stata package for split plots.
 d
-d Distribution-Date: 20230703
+d Distribution-Date: 20230801
 d
 d Asjad Naqvi
 d asjadnaqvi@gmail.com
 d https://medium.com/the-stata-guide
-p spider
+p splinefit
 
 

@@ -1,4 +1,4 @@
-*! spider v1.22 (03 Jul 2023)
+*! splinefit v1.0 beta (01 Aug 2023)
 *! Asjad Naqvi (asjadnaqvi@gmail.com)
 
 

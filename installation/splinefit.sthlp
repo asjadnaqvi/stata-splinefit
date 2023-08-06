@@ -39,7 +39,7 @@ See {browse "https://github.com/asjadnaqvi/stata-splinefit":GitHub} for examples
 
 {title:Package details}
 
-Version      : {bf:splinefit} v1.0
+Version      : {bf:splinefit} v1.0 Beta
 This release : 01 Aug 2023
 First release: 01 Aug 2023
 Repository   : {browse "https://github.com/asjadnaqvi/stata-splinefit":GitHub}
