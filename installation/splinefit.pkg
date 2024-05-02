@@ -1,16 +1,16 @@
-v 1.0
-d {bf:splinefit}: A Stata package for smooth line graphs.
+v 1.1
+d {bf:splinefit}: A Stata package for smooth connected line graphs.
 d See {bf:help splinefit} after installation.
 d
 d Requires: Stata version 15 or higher.
 d
 d KW: Stata
 d KW: graphs
+d KW: splinefit
 d
+d Distribution-Date: 20240502
 d
-d Distribution-Date: 20230801
-d
-d This  version: 01 Aug 2023
+d This  version: 02 May 2024
 d First version: 01 Aug 2023
 d License: MIT
 d

@@ -1,11 +1,9 @@
-*! splinefit v1.0 beta (01 Aug 2023)
+*! splinefit v1.1 (02 May 2024)
 *! Asjad Naqvi (asjadnaqvi@gmail.com)
 
 
-**********************************
-* Step-by-step guide on Medium   *
-**********************************
-
+* v1.1 (02 May 2024): First release
+* v1.0 (01 Aug 2023): Beta version
 
 cap program drop splinefit
 
@@ -15,11 +13,9 @@ program splinefit, sortpreserve
 version 15
  
 	syntax varlist(numeric min=2 max=2) [if] [in], ///
-		[ smooth(numlist max=1 >=0 <=1) close points(real 100)  									] ///
-		[ LWidth(string) LColor(string) MSYMbol(string) MSize(string) MColor(string) MLWIDth(string) ] ///
-		[ MLABel(varname)  MLABPOSition(string)   MLABSize(string) 			] /// // spider properties
-		[ title(passthru) subtitle(passthru) note(passthru) scheme(passthru) name(passthru) saving(passthru)	] /// 
-		[ legend(passthru) xsize(passthru) ysize(passthru) xtitle(passthru) ytitle(passthru)   ] 
+		[ smooth(numlist max=1 >=0 <=1) close points(real 100)  									 ] ///
+		[ LWidth(string) LColor(string) LPattern(string) MSYMbol(string) MSize(string) MColor(string) MLWIDth(string) ] ///
+		[ MLABel(varname) MLABPOSition(string) MLABSize(string) MLABColor(string) 	*			 ]  
 
 
 
@@ -56,30 +52,31 @@ preserve
 	//   spiders   //
 	/////////////////	
 	
-	
+	/*
 	if "`msymbol'" == "" local msymbol circle
+	if "`mcolor'" == ""  local mcolor 	black
+	
+	if "`lcolor'" == "" local lcolor black
+	if "`lwidth'" == "" local lwidth 0.2
+	*/
 
 	
-
-	
-	local spider  (line y_pts x_pts, cmissing(n) fi(100) lw(`lwidth') lc(`lcolor') ) 
+	local mylines  (line y_pts x_pts, cmissing(n) lw(`lwidth') lc(`lcolor')  lp(`lpattern') ) 
 			
-	local spider2  (scatter `yvar' `xvar', mlab(`mlabel') mlabpos(`mlabposition') mlabsize(`mlabsize') msize(`msize') mcolor(`mcolor') msymbol("`msymbol'") mlwidth(`mlwidth')) 
+	local myscatter  (scatter `yvar' `xvar', mlab(`mlabel') mlabpos(`mlabposition') mlabcolor(`mlabcolor') mlabsize(`mlabsize') msize(`msize') mcolor(`mcolor') msymbol("`msymbol'") mlwidth(`mlwidth')) 
 		
 		
 
 	//////////////////////
 	//   final graph	//
 	//////////////////////
-	
 
 
     twoway	///
-			`spider'	///
-			`spider2'	///
+			`mylines'	///
+			`myscatter'	///
 				,    ///
-				`xtitle' `ytitle' ///
-				`legend' `title' `subtitle' `note' `scheme' `name' `saving' `xsize' `ysize'
+				`options'
 								
 									
 			
@@ -99,7 +96,7 @@ end
 
 cap program drop smoother
 
-program smoother , sortpreserve
+program smoother, sortpreserve
 
 version 15
  
@@ -216,7 +213,7 @@ preserve
  
 	if "`close'" == "" drop if spline==`last' - 1
  
-	*drop id spline t
+	drop id spline t
 	gen _id = _n
 	order _id
 	

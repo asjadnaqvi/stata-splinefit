@@ -1,7 +1,7 @@
-v 1.0 beta
-d 'SPLINEFIT': A Stata package for split plots.
+v 1.1
+d 'SPLINEFIT': A Stata package for smooth connected line graphs.
 d
-d Distribution-Date: 20230801
+d Distribution-Date: 20240502
 d
 d Asjad Naqvi
 d asjadnaqvi@gmail.com
