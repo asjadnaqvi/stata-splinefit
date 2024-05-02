@@ -4,11 +4,11 @@
 
 ---
 
-
-
-
-
 ![StataMin](https://img.shields.io/badge/stata-2015-blue) ![issues](https://img.shields.io/github/issues/asjadnaqvi/stata-splinefit) ![license](https://img.shields.io/github/license/asjadnaqvi/stata-splinefit) ![Stars](https://img.shields.io/github/stars/asjadnaqvi/stata-splinefit) ![version](https://img.shields.io/github/v/release/asjadnaqvi/stata-splinefit) ![release](https://img.shields.io/github/release-date/asjadnaqvi/stata-splinefit)
+
+
+![splineplot_banner](https://github.com/asjadnaqvi/stata-splinefit/assets/38498046/24cf9a37-f739-420b-903f-cac5c4a16aa0)
+
 
 
 
