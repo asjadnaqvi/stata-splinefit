@@ -15,7 +15,7 @@ The routine is based on the {browse "https://en.wikipedia.org/wiki/Centripetal_C
 {p 8 15 2}
 
 {cmd:splinefit} {it:y x} {ifin}, 
-                {cmd:[} {cmd:smooth}({it:0-1}){cmd:points}({it:num}) {cmd:close} {cmdab:lw:idth}({it:str}) {cmdab:lc:olor}({it:str}) {cmdab:lp:attern}({it:str}) {cmdab:msym:bol}({it:str}) {cmdab:ms:ize}({it:str}) 
+                {cmd:[} {cmd:smooth}({it:0-1}) {cmd:close} {cmd:points}({it:num}) {cmdab:lw:idth}({it:str}) {cmdab:lc:olor}({it:str}) {cmdab:lp:attern}({it:str}) {cmdab:msym:bol}({it:str}) {cmdab:ms:ize}({it:str}) 
                   {cmdab:mc:olor}({it:str}) {cmdab:mlab:el}({it:str}) {cmdab:mlabpos:ition}({it:str}) {cmdab:mlabs:ize}({it:str}) * {cmd:]}
 {p 4 4 2}
 
