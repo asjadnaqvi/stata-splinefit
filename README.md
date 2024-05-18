@@ -18,22 +18,22 @@
 
 The package can be installed via SSC or GitHub. The GitHub version, *might* be more recent due to bug fixes, feature updates etc, and *may* contain syntax improvements and changes in *default* values. See version numbers below. Eventually the GitHub version is published on SSC.
 
-SSC (**coming soon**):
+SSC (**v1.1**):
 
-```
-
+```stata
+ssc install splinefit, replace
 ```
 
 GitHub (**v1.1**):
 
-```
+```stata
 net install splinefit, from("https://raw.githubusercontent.com/asjadnaqvi/stata-splinefit/main/installation/") replace
 ```
 
 
 If you want to make a clean figure, then it is advisable to load a clean scheme. These are several available and I personally use the following:
 
-```
+```stata
 ssc install schemepack, replace
 set scheme white_tableau  
 ```
@@ -42,7 +42,7 @@ You can also push the scheme directly into the graph using the `scheme(schemenam
 
 I also prefer narrow fonts in figures with long labels. You can change this as follows:
 
-```
+```stata
 graph set window fontface "Arial Narrow"
 ```
 
